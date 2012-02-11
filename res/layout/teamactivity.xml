@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        android:layout_weight="1">
+        
+   		 <TextView
+   		     android:id="@+id/playerListHeader"
+   		     android:layout_width="fill_parent"
+   		     android:layout_height="wrap_content"
+   		     android:layout_marginLeft="57dp"
+   		     android:text="Players"
+   		     android:layout_alignParentTop="true"
+   		     android:textAppearance="?android:attr/textAppearanceLarge" />
+   		 
+   		 <ListView
+   		     android:id="@android:id/list"
+   		     android:layout_width="fill_parent"
+   		     android:layout_height="wrap_content"
+   		     android:layout_alignParentLeft="true"
+   		      />
+
+
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayoutCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+        
+        <Button
+            android:id="@+id/newGameButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="New game" />
+
+         <Button
+             android:id="@+id/newPlayerButton"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/newGameButton"
+             android:text="New player" />
+
+         <TextView
+             android:id="@+id/playerInfoTextView"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_centerHorizontal="true"
+             android:text="Add a new game or continue an existing one in the list to the right." />
+         
+    </RelativeLayout>
+    
+        <LinearLayout
+        android:id="@+id/linearLayoutRight"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        android:layout_weight="1">
+         
+         <TextView
+   		     android:id="@+id/gameListHeader"
+   		     android:layout_width="fill_parent"
+   		     android:layout_height="wrap_content"
+   		     android:layout_marginLeft="57dp"
+   		     android:text="Games"
+   		     android:layout_alignParentTop="true"
+   		     android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+   		 <ListView
+   		     android:id="@+id/gamesListView"
+   		     android:layout_width="fill_parent"
+   		     android:layout_height="fill_parent"
+   		     android:layout_alignParentLeft="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

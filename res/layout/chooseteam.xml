@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        android:layout_weight="2">
+        
+   		 <ListView
+   		     android:id="@android:id/list"
+   		     android:layout_width="fill_parent"
+   		     android:layout_height="fill_parent"
+   		     android:layout_alignParentLeft="true"
+   		     android:layout_alignParentTop="true" />
+
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/linearLayoutLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+        
+         <Button
+             android:id="@+id/newTeamButton"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:text="New Team" />
+
+         <TextView
+             android:id="@+id/teamInfoTextView"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_centerHorizontal="true"
+             android:text="Create a new team or choose an existing one in the list." />
+         
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:weightSum="3" >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        android:layout_weight="5.5">
+        
+   		 <ListView
+   		     android:id="@android:id/list"
+   		     android:layout_width="fill_parent"
+   		     android:layout_height="fill_parent"
+   		     android:layout_alignParentLeft="true"
+   		     android:layout_alignParentTop="true"/>
+
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/linearLayoutLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/attackNulledButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/attackWonButton"
+            android:text="Attack nulled" />
+
+        <Button
+            android:id="@+id/attackWonButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Attack won" />
+
+        <Button
+            android:id="@+id/threeButton"
+            android:layout_width="75px"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/oneButton"
+            android:layout_toRightOf="@+id/twoButton"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/fourButton"
+            android:layout_width="75px"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/oneButton"
+            android:layout_toRightOf="@+id/threeButton"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/blockButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/attackWonButton"
+            android:text="Block point" />
+
+
+        <Button
+            android:id="@+id/oneButton"
+            android:layout_width="75px"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/serveButtontextView"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/twoButton"
+            android:layout_width="75px"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/oneButton"
+            android:layout_toRightOf="@+id/oneButton"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/attackLostButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/attackNulledButton"
+            android:text="Attack lost" />
+
+        <TextView
+            android:id="@+id/statsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Stats and other info\nwill show here\nand here\nand here" />
+
+        <Button
+            android:id="@+id/serviceAcebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/blockButton"
+            android:layout_toRightOf="@+id/blockButton"
+            android:text="Service ace!" />
+
+        <TextView
+            android:id="@+id/serveButtontextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/blockButton"
+            android:layout_marginTop="21dp"
+            android:text="Serve grade"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/passingButtonTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/oneButton"
+            android:layout_marginTop="21dp"
+            android:text="Passing grade"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/passGradeOneButton"
+            android:layout_width="75px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/passingButtonTextView"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/passGradeTwoButton"
+            android:layout_width="75px"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passingButtonTextView"
+            android:layout_toRightOf="@+id/passGradeOneButton"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/passGradeThreeButton"
+            android:layout_width="75px"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/passGradeTwoButton"
+            android:layout_toRightOf="@+id/passGradeTwoButton"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/passGradeFourButton"
+            android:layout_width="75px"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/passGradeThreeButton"
+            android:layout_toRightOf="@+id/passGradeThreeButton"
+            android:text="4" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+VolleyStats for Android
+
+An app for tracking player stats during a volleyball game.
+
+The skills tracked are:
+- Passing: 1, 2, 3, 4 (1 best, 4 worst)
+- Serving: 1, 2, 3, 4 (1 best, 4 worst)
+- Attack: Won, Nulled, Lost
+- Blocks won
+- Service aces
+
+Attacks won, blocks won and service aces are summarized to calculate scored points for player.
+
+Average of passing and serving for players are calculated.
+
+Attacking effect for players are calculated.

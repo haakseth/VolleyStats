@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/printFile" android:title="Print game to File"></item>
+    <item android:id="@+id/setOpponentName" android:title="Opponent name"></item>
+    <item android:id="@+id/setScore" android:title="Set score"></item>
+</menu>
